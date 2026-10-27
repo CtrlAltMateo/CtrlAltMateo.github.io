@@ -1,12 +1,52 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CtrlAltMateo</title>
-</head>
-<body>
-    <h1>Hello World!</h1>
-    <a href="./lightSim.html">Click here to see the light simulator</a>
-</body>
-</html>
+<link rel="stylesheet" href="https://unpkg.com/7.css">
+<style>
+  body {
+    background-image: url('./background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .scaled-text {
+    font-size: 8vh;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    line-height: 1.1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+</style>
+
+<div class="window glass active" style="position: absolute; left: 6.25vw; top: 6.25vh; width: 37.5vw; height: 37.5vh;"> 
+  <div class="title-bar"> 
+    <div class="title-bar-text">Notes</div> 
+    <div class="title-bar-controls"> 
+      <button aria-label="Minimize"></button> 
+      <button aria-label="Maximize"></button> 
+      <button aria-label="Close"></button> 
+    </div> 
+  </div> 
+  <div class="window-body has-space" style="height: calc(100% - 31px); box-sizing: border-box; overflow: hidden;"> 
+    <p class="scaled-text">Hello World!</p> 
+  </div>
+</div>
+
+<div class="window glass active" style="position: absolute; right: 6.25vw; bottom: 6.25vh; width: 37.5vw; height: 37.5vh;"> 
+  <div class="title-bar"> 
+    <div class="title-bar-text">Links</div> 
+    <div class="title-bar-controls"> 
+      <button aria-label="Minimize"></button> 
+      <button aria-label="Maximize"></button> 
+      <button aria-label="Close"></button> 
+    </div> 
+  </div> 
+  <div class="window-body has-space" style="height: calc(100% - 31px); box-sizing: border-box; overflow: auto; display: flex; align-items: center; justify-content: center;"> 
+    <a href="./lightSim.html" style="font-size: 2.5vw; font-weight: bold;">Light Simulator</a>
+  </div>
+</div>
